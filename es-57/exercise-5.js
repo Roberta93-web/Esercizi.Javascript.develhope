@@ -1,8 +1,8 @@
-function nicknameMap(persons) {
-  return persons.map((el)=> el.name + "-" + el.age);
+function sortPeopleByAge(arr) {
+  return people.sort((a, b) => a.age - b.age);
 }
 
-const persons = [
+const people = [
   { name: 'Paul', age: 16 },
   { name: 'George', age: 17 },
   { name: 'Lucas', age: 21 },
@@ -15,6 +15,5 @@ const persons = [
   { name: 'Alice', age: 28 }
 ];
 
-const nicknames = nicknameMap(persons);
-console.log(persons);
-console.log(nicknames);
+const sortingByAge = sortPeopleByAge(people)
+console.log(sortingByAge)
