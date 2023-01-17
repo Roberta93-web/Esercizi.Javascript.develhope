@@ -7,3 +7,6 @@ const multiply = (a, b) => { return a * b;}
 const divide = function (a,b) { return a / b;}
 
 const log = (value) => { console.log(value);}
+
+log(divide(subtract(multiply(sum(2,4), sum(5,2)), 2), 5)); 
+ // Avevo dimenticato di farlo
